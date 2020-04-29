@@ -1,0 +1,16 @@
+/**JavaClass2-2
+ * 
+ * @author matsumotoaoi
+ */
+public class OneDallerShopTest {
+
+	public static void main(String[] args) {
+		
+	}
+	
+	void printStoreInfo() {
+		
+	}
+	
+	
+}

@@ -1,0 +1,13 @@
+/**JavaClass5
+ *
+ * @author matsumotoaoi
+ */
+public class TextFileCheck {
+
+
+	protected String getExtension() {
+
+		return;
+	}
+
+}

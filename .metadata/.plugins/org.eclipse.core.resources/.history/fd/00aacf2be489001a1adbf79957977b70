@@ -1,0 +1,29 @@
+/**JavaClass5
+ * FileCheckAbstract(抽象)クラス
+ * @author matsumotoaoi
+ */
+public abstract class FileCheckAbstract {
+
+
+	/**
+	 * 拡張子取得メソッド
+	 * @return
+	 */
+	abstract protected String getExtension();
+
+
+	/**
+	 * 拡張子判定メソッド
+	 * @param fileName
+	 * @return
+	 */
+	public boolean isFileExtension(String fileName) {
+
+		if(fileName.substring(fileName.lastIndexOf(".")+1).equals(getExtension())) {	//意味不明
+			return true;
+		}else {
+			return false;
+		}
+
+	}
+}

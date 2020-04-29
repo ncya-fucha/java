@@ -1,0 +1,15 @@
+/**JavaClass5
+ * FileCheckAbstract(抽象)クラスを継承
+ * @author matsumotoaoi
+ */
+public class PdfFileCheck extends FileCheckAbstract {
+
+	/**
+	 * pdfを戻すメソッド
+	 */
+	@Override
+	protected String getExtension() {
+		return "pdf";
+	}
+
+}

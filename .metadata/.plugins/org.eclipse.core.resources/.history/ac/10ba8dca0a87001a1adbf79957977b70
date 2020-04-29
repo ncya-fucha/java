@@ -1,0 +1,71 @@
+/**JavaClass3
+ * 生徒テスト点数クラス
+ * @author matsumotoaoi
+ */
+public class StudentTestScore {
+
+	private static final String DEFAULT_NAME = "名無し"; //生徒名の初期値
+	private static final int DEFAULT_SCORE = 0; //点数の初期値
+
+	private String name;
+	private int score;
+
+	/**
+	 * コンストラクタ
+	 */
+	public StudentTestScore() {
+		this.name = DEFAULT_NAME;
+		this.score = DEFAULT_SCORE;
+	}
+
+	/**
+	 * コンストラクタ
+	 * @param name 生徒名
+	 * @param score 点数
+	 */
+	public StudentTestScore(String name, int score) {
+		this.name = name;
+		this.score = score;
+	}
+
+	/**
+	 * 生徒名を取得	ゲッタ
+	 * @return name 生徒名
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * 生徒名を設定	セッタ
+	 * @param name 生徒名
+	 */
+	public void setName(String name) {
+		if (name == null || name == "") {
+			this.name = DEFAULT_NAME; //初期値を設定し直す
+		} else {
+			this.name = name;
+		}
+	}
+
+	/**
+	 * 点数を取得		ゲッタ
+	 * @return score 点数
+	 */
+	public int getScore() {
+		return score;
+	}
+
+	/**
+	 * 点数を設定		セッタ
+	 * @param score 点数
+	 */
+	public void setSore(int score) {
+		if (score < 0 || score > 100) {
+			System.out.println("【警告】" + this.name + "さんのテストの点数[" +
+					this.score + "]が範囲外(0〜100)のため[0]にします。");
+		} else {
+			this.score = score;
+		}
+	}
+}

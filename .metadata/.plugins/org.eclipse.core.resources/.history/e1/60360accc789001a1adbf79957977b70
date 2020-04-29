@@ -1,0 +1,35 @@
+/**JavaClass5
+ * テストクラス
+ * @author matsumotoaoi
+ */
+public class Test {
+
+	/**
+	 * mainメソッド
+	 * @param args コマンドライン引数
+	 */
+	public static void main(String[] args) {
+		textOrPdfCheck("textFile.txt");
+		textOrPdfCheck("pdfFile.pdf");
+		textOrPdfCheck("excelFile.xls");
+	}
+
+	private static void textOrPdfCheck(String fileName) {
+		FileCheckAbstract fileChk = new TextFileCheck();
+		if (!fileChk.isFileExtension(fileName)) {
+			System.out.println(fileName + "はテキストファイルではありません。");
+		} else {
+			System.out.println(fileName + "はテキストファイルです。");
+			return;
+		}
+
+		fileChk = new PdfFileCheck();
+		if (!fileChk.isFileExtension(fileName)) {
+			System.out.println(fileName + "はPDFファイルではありません。");
+		} else {
+			System.out.println(fileName + "はPDFファイルです。");
+			return;
+		}
+		System.out.println(fileName + "はテキストファイルでもPDFファイルでもありません。");
+	}
+}

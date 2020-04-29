@@ -1,0 +1,64 @@
+/**JavaClass2-1
+ * 店舗を表すクラス
+ * @author matsumotoaoi
+ */
+public class OneDallerShop {
+
+	//フィールド
+	String DEFAULT_PARENT = "ダイコー";
+	private static String parentCompany = DEFAULT_PARENT;
+	int salesNumbers;
+	String storeName;
+	String businessHours;
+
+	/**
+	 * コンストラクタ
+	 * @param storeName
+	 * @param businessHours
+	 */
+	OneDollarShop(String storeName, String businessHours){
+		this.storeName = storeName;
+		this.businessHours = businessHours;
+	}
+
+
+	/**
+	 * ゲッタ		販売数取得
+	 * @return	salesNumbers 販売数
+	 */
+	public int getSalesNumbers() {
+		return salesNumbers;
+	}
+
+	/**
+	 * セッタ		販売数設定
+	 * @param salesNumbers
+	 */
+	public void setSalesNumbers(int salesNumbers) {
+		this.salesNumbers = salesNumbers;
+	}
+
+	/**
+	 * ゲッタ		店舗名取得
+	 * @return storeName 店舗名
+	 */
+	public String getStoreName() {
+		return storeName;
+	}
+
+	/**
+	 * 店舗名設定
+	 * @param storeName 店舗名
+	 */
+	public void setStoreName(String storeName) {
+		this.storeName = storeName;
+	}
+
+	public long getSales() {
+
+	}
+
+	public void printStoreInfo() {
+
+	}
+}

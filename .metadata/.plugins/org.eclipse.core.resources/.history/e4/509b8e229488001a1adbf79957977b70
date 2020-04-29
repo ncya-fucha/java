@@ -1,0 +1,16 @@
+/**JavaClass4
+ *
+ * @author matsumotoaoi
+ */
+public class DiscountItem extends Item {
+
+	DiscountItem(String name, int price){
+		super(name, price);
+	}
+
+	@Override
+	public int getPriceTax() {
+		int disPrice = (int)((this.getPrice() * 0.9) * TAX);
+		return disPrice;
+	}
+}

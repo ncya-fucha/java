@@ -1,0 +1,80 @@
+/**JavaClass2-1
+ * 店舗を表すクラス
+ * @author matsumotoaoi
+ */
+public class OneDollarShop {
+
+	//フィールド
+	static final String DEFAULT_PARENT = "ダイコー";
+	private static String parentCompany = DEFAULT_PARENT;
+	private int salesNumbers;
+	private String storeName;
+	private String businessHours;
+
+	/**
+	 * コンストラクタ
+	 * @param storeName
+	 * @param businessHours
+	 */
+	OneDollarShop(String storeName, String businessHours){
+		this.storeName = storeName;
+		this.businessHours = businessHours;
+	}
+
+	/**
+	 * ゲッタ		販売数取得
+	 * @return	salesNumbers 販売数
+	 */
+	public int getSalesNumbers() {
+		return salesNumbers;
+	}
+
+	/**
+	 * セッタ		販売数設定
+	 * @param salesNumbers
+	 */
+	public void setSalesNumbers(int salesNumbers) {
+		this.salesNumbers = salesNumbers;
+	}
+
+	/**
+	 * ゲッタ		店舗名取得
+	 * @return storeName 店舗名
+	 */
+	public String getStoreName() {
+		return storeName;
+	}
+
+	/**
+	 * 店舗名設定
+	 * @param storeName 店舗名
+	 */
+	public void setStoreName(String storeName) {
+		this.storeName = storeName;
+	}
+
+	/**
+	 * 売上高メソッド
+	 * @return salesNumbers * 100 売上高
+	 */
+	public long getSales() {
+		return salesNumbers * 100;
+	}
+
+	/**
+	 * 表示メソッド	StringBuilder
+	 */
+	public void printStoreInfo() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(parentCompany);
+		sb.append("「");
+		sb.append(storeName);
+		sb.append("」の営業時間は「");
+		sb.append(businessHours);
+		sb.append("」で、売上高は");
+		sb.append(getSales());
+		sb.append("です。");
+		String str = sb.toString();
+		System.out.println(str);
+	}
+}

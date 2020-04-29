@@ -1,0 +1,17 @@
+/**
+ *
+ * @author matsumotoaoi
+ */
+public class Test {
+
+	public static void main(String[] args) {
+
+		//商品名と価格をインスタンス
+		Item A = new Item("商品A", 500);
+		Item B = new Item("商品B", 500);
+
+		//表示
+		System.out.println("商品名：" + A.getName() + "  価格" + A.getPrice() + "  税込価格" + A.getPriceTax());
+		System.out.println("商品名：" + B.getName() + "  価格" + B.getPrice() + "  税込価格" + B.getPriceTax());
+	}
+}

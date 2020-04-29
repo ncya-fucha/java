@@ -1,0 +1,15 @@
+/**JavaClass5
+ * FileCheckAbstract(抽象)クラスを継承した具象クラス
+ * @author matsumotoaoi
+ */
+public class TextFileCheck extends FileCheckAbstract { //継承
+
+	/**
+	 * txtを戻すメソッド
+	 */
+	@Override
+	protected String getExtension() {
+		return "txt";
+	}
+
+}

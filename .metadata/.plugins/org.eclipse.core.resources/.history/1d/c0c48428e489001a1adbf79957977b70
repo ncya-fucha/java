@@ -1,0 +1,16 @@
+/**JavaClass5
+ * abstractクラス
+ * @author matsumotoaoi
+ */
+public abstract class FileCheckAbstract {
+
+
+	abstract protected String getExtension() {
+
+	}
+
+
+	public boolean isFileExtension(String fileName) {
+
+	}
+}

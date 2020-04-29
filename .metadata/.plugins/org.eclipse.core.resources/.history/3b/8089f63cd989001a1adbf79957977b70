@@ -1,0 +1,10 @@
+/**JavaClass5
+ *
+ * @author matsumotoaoi
+ */
+public class PdfFileCheck extends FileCheckAbstract {
+
+	protected String getExtension() {
+		return "pdf";
+	}
+}

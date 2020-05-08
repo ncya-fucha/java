@@ -28,8 +28,8 @@ public class Waiter {
 
 		switch(selectNo) {
 		case 1:
-			orderAndCooking();
-			String getCookingName();
+			JapaneseFoodCook j = new orderAndCooking();
+			String JapaneseFoodCook.getCookingName();
 			break;
 		case 2:
 			break;
